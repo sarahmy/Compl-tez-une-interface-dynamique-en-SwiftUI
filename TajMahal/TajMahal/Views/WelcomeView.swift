@@ -7,13 +7,14 @@
 
 import SwiftUI
 
+// Page d'accueil
 struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             Image("TajMahal")
             Spacer()
             NavigationLink {
-                // Vue liste du menu
+                MenuView()
             } label : {
                 Text("Menu")
             }
