@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 // Menu sous forme de liste
 struct MenuView: View {
     // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
