@@ -13,17 +13,19 @@ struct LineView: View {
     let leftText : String
     let rightText : String
     
+    // Présentation affichage de la page d'accueil du restaurant
     var body: some View {
         HStack {
             Image(imageName)
             Text(leftText)
             Spacer()
             Text(rightText)
-            
         }
-        .padding()
+        .padding(.bottom, 10)
     }
 }
+
+
 
 #Preview {
     LineView(imageName: "Horloge", leftText: "Mardi", rightText: "")

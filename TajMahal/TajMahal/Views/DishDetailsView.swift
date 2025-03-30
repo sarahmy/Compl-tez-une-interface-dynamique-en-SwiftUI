@@ -7,12 +7,20 @@
 
 import SwiftUI
 
-struct DishDetailsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+//Affichage du détail de chaque plat : photo du plat, niveau de piquant, liste des allergènes et liste des ingrédients
+    struct DishDetailsView: View {
+        var dish: Dish
 
-#Preview {
-    DishDetailsView()
-}
+        var body: some View {
+            LineDishDetailsView(
+                name: dish.name,
+                imageName: dish.imageName,
+                allergens: dish.allergens,
+                ingredients: dish.ingredients,
+                spiceLevel: dish.spiceLevel
+            )
+            .navigationTitle(dish.name)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
