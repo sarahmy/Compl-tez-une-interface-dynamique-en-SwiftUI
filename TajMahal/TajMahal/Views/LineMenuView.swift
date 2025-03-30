@@ -37,6 +37,7 @@ struct LineMenuView: View {
                         Spacer()
                         Text(description)
                           .font(.caption)
+                          .multilineTextAlignment(.leading)
                          .foregroundColor(grayColor)
                             .padding(.top, 5)
                         HStack{
